@@ -69,7 +69,7 @@
       @media (max-width: 768px) {
           #header {
               flex-direction: column;
-              align-items: center;
+              align-items: row;
               position: fixed;
               top: 0;
               width: 100%;
@@ -90,17 +90,17 @@
               margin: 5px 0;
           }
           #header button {
-              font-size: 14px;
+              font-size: 10px; /*14*/
               margin: 5px 0;
               padding: 5px 10px;
           }
           #unity-canvas {
-              transform: scale(0.8); /* 화면 축소 */
+              transform: scale(1); /* 화면 축소 */
               transform-origin: center; /* 중앙 기준으로 축소 */
               position: fixed;
-              top: 50%; /* 화면의 중앙에 위치하도록 설정 */
-              left: 50%;
-              transform: translate(-50%, -50%) scale(0.8); /* 중앙 위치 및 축소 */
+              /* top: 50%; 
+              left: 50%; */
+              transform: scale(1); /* 중앙 위치 및 축소 */
               width: 100%;
               height: auto;
           }
