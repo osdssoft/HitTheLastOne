@@ -72,14 +72,11 @@
               margin: 5px 0;
           }
           #unity-canvas {
-              transform: scale(0.8); /* 화면 축소 */
-              transform-origin: center; /* 중앙 기준으로 축소 */
-              position: fixed;
-              top: 50%; /* 화면의 중앙에 위치하도록 설정 */
-              left: 50%;
-              transform: translate(-50%, -50%) scale(0.8); /* 중앙 위치 및 축소 */
+              transform: scale(0.8);
+              transform-origin: center;
               width: 100%;
               height: auto;
+              position: fixed;
           }
       }
   </style>
@@ -162,9 +159,9 @@
 
         var canvas = document.querySelector("#unity-canvas");
         canvas.style.transform = "scale(0.8)";
-        canvas.style.transformOrigin = "top";
+        canvas.style.transformOrigin = "center";
         canvas.style.position = "fixed";
-        canvas.style.top = "60px";
+        canvas.style.top = "50%";
         canvas.style.width = "100%";
         canvas.style.height = "auto";
 
