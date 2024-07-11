@@ -68,8 +68,8 @@
       }
       @media (max-width: 768px) {
           #header {
-              flex-direction: column;
-              align-items: row;
+              flex-direction: row;
+              align-items: column;
               position: fixed;
               top: 0;
               width: 100%;
@@ -168,10 +168,10 @@
         unityInstance.SendMessage('GameManager', 'OnGameEnd', endGame); // 게임 끝날 때 endGame 호출
       });
       function showTeamInfo() {
-        alert('팀 정보 : 오손도손 소프트\n소속 : 한양대학교 컴퓨터소프트웨어학부\n게임 이름 : HitTheLastOne\n버전: 1.0');
+        alert('팀 정보 : 오손도손 소프트\n소속 : 한양대학교 컴퓨터소프트웨어학부\n게임 이름 : Hit the last one!\n버전: 1.0');
       }
       function showGameInfo() {
-        alert('일명 "강타싸움"을 연습하기 위한 미니게임입니다. \n정확도는 몬스터 처치 직전 hp를 스킬 데미지로 나눈 값입니다.')
+        alert('일명 "강타싸움"을 연습하기 위한 미니게임입니다. \n정확도는 몬스터 처치 직전 hp를 스킬 데미지로 나눈 값입니다.\n모바일 환경에서는 정상적으로 작동하지 않을 수 있습니다.')
       }
 
       function sendMail() {
