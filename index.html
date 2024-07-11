@@ -4,45 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | HitTheLastOne</title>
-    <style>
-      #header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #333;
-        color: white;
-      }
-      #header h1 {
-        margin: 0;
-      }
-      #header button {
-        background-color: #555;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        margin-left: 10px;
-      }
-      #header button:hover {
-        background-color: #777;
-      }
-    </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5499973837020117"
-    crossorigin="anonymous"></script>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <div id="header">
-      <div>
-        <button onclick="showInfo()">팀 정보</button>
-      </div>
-      <h1>HIT THE LAST ONE</h1>
-      <div>
-        <button onclick="sendMail()">피드백 보내기</button>
-      </div>
-    </div>
     <canvas id="unity-canvas" width=1120 height=630 tabindex="-1" style="width: 1120px; height: 630px; background: #231F20"></canvas>
-    <script src="Build/HitTheLastOne.loader.js"></script>
+    <script src="Build/HitTheLastOne_1.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -60,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/HitTheLastOne.data",
-        frameworkUrl: "Build/HitTheLastOne.framework.js",
-        codeUrl: "Build/HitTheLastOne.wasm",
+        dataUrl: "Build/HitTheLastOne_1.data",
+        frameworkUrl: "Build/HitTheLastOne_1.framework.js",
+        codeUrl: "Build/HitTheLastOne_1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "OSDS",
         productName: "HitTheLastOne",
@@ -70,19 +35,6 @@
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
-      function showInfo() {
-        alert('팀 이름 : 오손도손 소프트\n소속 : 한양대학교 컴퓨터소프트웨어학부\n게임 이름 : HitTheLastOne\n버전: 1.0');
-      }
-
-      function sendMail() {
-        window.location.href = 'mailto:smilechild1005@naver.com';      
-      }
-      function DisplayMessage(message) {
-            // var consoleDiv = document.getElementById("console");
-            alert(message);
-            // consoleDiv.innerHTML += message + "<br>";
-            // consoleDiv.scrollTop = consoleDiv.scrollHeight; // Scroll to bottom
-      }
     </script>
   </body>
 </html>
