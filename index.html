@@ -94,10 +94,11 @@
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <div id="header">
       <div>
-        <button onclick="showInfo()">팀 정보</button>
+        <button onclick="showGameInfo()">게임 설명</button>
       </div>
       <h1>HIT THE LAST ONE</h1>
       <div>
+          <button onclick="showTeamInfo()">팀 정보</button>
           <button onclick="sendMail()">피드백 보내기</button>
       </div>
   </div>
@@ -140,8 +141,11 @@
         startGame(); // 게임 시작 시간 기록
         unityInstance.SendMessage('GameManager', 'OnGameEnd', endGame); // 게임 끝날 때 endGame 호출
       });
-      function showInfo() {
+      function showTeamInfo() {
         alert('팀 정보 : 오손도손 소프트\n소속 : 한양대학교 컴퓨터소프트웨어학부\n게임 이름 : HitTheLastOne\n버전: 1.0');
+      }
+      function showGameInfo() {
+        alert('일명 "강타싸움"을 연습하기 위한 미니게임입니다. \n정확도는 몬스터 처치 직전 hp를 스킬 데미지로 나눈 값입니다.')
       }
 
       function sendMail() {
