@@ -31,15 +31,15 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <div id="header">
+      <div>
+        <button onclick="showInfo()">팀 정보</button>
+      </div>
       <h1>OSDS</h1>
       <div>
-        <button onclick="showInfo()">정보 확인</button>
-        <button onclick="sendMail()">메일 보내기</button>
+        <button onclick="sendMail()">피드백 보내기</button>
       </div>
     </div>
-    <div>
-      
-    </div>
+    
 
     <canvas id="unity-canvas" width=1120 height=630 tabindex="-1" style="width: 1120px; height: 630px; background: #231F20"></canvas>
     <script src="Build/v1.1.loader.js"></script>
@@ -71,7 +71,7 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
       function showInfo() {
-        alert('팀 정보 : 오손도손 \n소속 : 한양대학교 컴퓨터소프트웨어학부 \n 게임 이름 : HitTheLastOne \n 버전: 1.0');
+        alert('팀 정보 : 오손도손 소프트\n소속 : 한양대학교 컴퓨터소프트웨어학부\n게임 이름 : HitTheLastOne\n버전: 1.0');
       }
 
       function sendMail() {
