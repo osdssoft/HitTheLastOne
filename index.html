@@ -154,18 +154,17 @@
         alert(message);
       }
 
-      iif (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         var meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
 
         var canvas = document.querySelector("#unity-canvas");
-        canvas.style.transform = "translate(-50%, -50%) scale(0.8)";
-        canvas.style.transformOrigin = "center";
+        canvas.style.transform = "scale(0.8)";
+        canvas.style.transformOrigin = "top";
         canvas.style.position = "fixed";
-        canvas.style.top = "50%";
-        canvas.style.left = "50%";
+        canvas.style.top = "60px";
         canvas.style.width = "100%";
         canvas.style.height = "auto";
 
