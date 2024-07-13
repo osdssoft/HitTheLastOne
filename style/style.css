@@ -6,6 +6,10 @@ html {
 }
 /* 폰트적용 끝 */
 
+body {
+    background-color: white;
+}
+
 body, ul, li {
     margin: 0;
     padding: 0;
@@ -91,6 +95,56 @@ a {
     }
     body, html {
         transform: none !important; /* 모바일에서 기울이기 적용 안 되도록 */
-      }
+    }
 
+}
+
+html[theme="light"] {
+    transition: 0.4s;
+}
+
+html[theme="dark"] {
+    filter: invert(100%) hue-rotate(180deg);
+    transition: 0.4s;
+}
+
+.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    display: none;
+}
+  
+.slider {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    cursor: pointer;
+    background-color: gray;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+  
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+  
+input:checked + .slider {
+    background-color: black;
+}
+input:checked + .slider::before {
+    transform: translateX(26px);
 }

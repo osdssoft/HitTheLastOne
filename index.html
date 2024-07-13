@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html theme="light">
 
 <head>
   <link rel="stylesheet" href="./style/style.css">
@@ -86,5 +86,47 @@
   </script>
 </body>
 
+<script>
+fetch('header.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('header-container').innerHTML = html;
+    var themeValue = document.querySelector('#theme-value').dataset.theme;
+    console.log('Theme value:', themeValue);
+  });
+
+fetch('header.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('header-container').innerHTML = html;
+    var themeValue = document.querySelector('#theme-value').dataset.theme;
+  });
+
+class Mode {
+  #eventEl;
+  constructor() {
+    this.#assignElement();
+    this.#addEvent();
+  }
+
+  #assignElement() {
+    this.#eventEl = document.getElementById("switch");
+  }
+
+  #addEvent() {
+    this.#eventEl.addEventListener("change", (event) => {
+      document.querySelector('.theme-value').setAttribute(
+        "data-theme",
+        event.target.checked ? "dark" : "light"
+      );
+      document.documentElement.setAttribute(
+        "theme",
+        event.target.checked ? "dark" : "light"
+      );
+    });
+  }
+}
+new Mode();
+</script>
 
 </html>
