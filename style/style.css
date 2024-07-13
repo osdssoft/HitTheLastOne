@@ -36,7 +36,8 @@ a {
 .menu-bar__menu-box-1 > ul > li > a {
     display: block;
     font-size: 1.5rem;
-    /* border: 3px solid greenyellow; */
+    margin: 0px;
+    border: 3px solid greenyellow;
 }
 /* hover는 가능한 부모의 엘리먼트에 적용해 주는 것이 좋다 */
 .menu-bar__menu-box-1 > ul > li:hover > a {
@@ -50,23 +51,23 @@ a {
     position: relative;
 }
 .logo-bar > div > .logo-bar__logo {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    padding: 0px;
+
+    border: 3px solid red;
 }
 .logo-bar > div > .logo-bar__logo > span > span:nth-of-type(3) {
     color: red;
 }
 
 .logo-image {
-    height: 65px;
+    height: 45px;
     top: 50%;
-    transform: translateY(30%);
+    transform: translateY(20%);
 }
 
-.inline-grid {
-    font-size: 0;
-}
 .inline-grid > * {
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
