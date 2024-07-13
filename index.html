@@ -4,109 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>HitTheLastOne | OSDS</title>
-    <style>
-      body {
-          text-align: center;
-          padding: 0;
-          border: 0;
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-      #header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 20px;
-          background-color: #333;
-          color: white;
-          width: 100%;
-          box-sizing: border-box;
-          position: relative;
-      }
-      #header h1 {
-          margin: 0;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-      }
-      #header .left-buttons,
-      #header .right-buttons {
-          display: flex;
-          align-items: center;
-      }
-      #header button {
-          background-color: #555;
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          cursor: pointer;
-          margin-left: 10px;
-      }
-      #header button:hover {
-          background-color: #777;
-      }
-      #unity-canvas {
-          background: #231F20;
-          width: 100%;
-          height: auto;
-          max-width: 1120px;
-          box-sizing: border-box;
-      }
-      #console {
-          background-color: #222;
-          color: #fff;
-          padding: 10px;
-          margin: 20px 0;
-          width: calc(100% - 40px);
-          max-width: 1120px;
-          box-sizing: border-box;
-          overflow-y: scroll;
-          text-align: left;
-          height: 200px;
-      }
-      @media (max-width: 768px) {
-          #header {
-              flex-direction: row;
-              align-items: column;
-              position: fixed;
-              top: 0;
-              width: 100%;
-              z-index: 1000;
-              padding: 5px;
-          }
-          #header h1 {
-              font-size: 18px;
-              position: relative;
-              transform: none;
-              left: auto;
-          }
-          #header .left-buttons,
-          #header .right-buttons {
-              flex-direction: column;
-              width: 100%;
-              align-items: center;
-              margin: 5px 0;
-          }
-          #header button {
-              font-size: 10px; /*14*/
-              margin: 5px 0;
-              padding: 5px 10px;
-          }
-          #unity-canvas {
-              transform: scale(1); /* 화면 축소 */
-              transform-origin: center; /* 중앙 기준으로 축소 */
-              position: fixed;
-              /* top: 50%; 
-              left: 50%; */
-              transform: scale(1); /* 중앙 위치 및 축소 */
-              width: 100%;
-              height: auto;
-          }
-      }
-  </style>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5499973837020117"
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5499973837020117"
       crossorigin="anonymous"></script>
           <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M7VWHTCGTL"></script>
@@ -118,16 +16,6 @@
 </script>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <div id="header">
-      <div>
-        <button onclick="showGameInfo()">게임 설명</button>
-      </div>
-      <h1>HIT THE LAST ONE</h1>
-      <div>
-          <button onclick="showTeamInfo()">팀 정보</button>
-          <button onclick="sendMail()">피드백 보내기</button>
-      </div>
-  </div>
     <canvas id="unity-canvas" width=1120 height=630 tabindex="-1" style="width: 1120px; height: 630px; background: #231F20"></canvas>
     <script src="Build/HitTheLastOneLast.loader.js"></script>
     <script>
