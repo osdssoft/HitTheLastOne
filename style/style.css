@@ -76,3 +76,17 @@ a {
     width: 10px;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    .logo-bar > div > .logo-bar__logo {
+        font-size: 1rem;
+        padding: 0px;
+        /* border: 3px solid red; */
+    }
+    .menu-bar__menu-box-1 > ul > li > a {
+        display: block;
+        font-size: 1rem;
+        margin: 0px;
+        /* border: 3px solid greenyellow; */
+    }
+}
