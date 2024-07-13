@@ -17,12 +17,14 @@
     gtag('js', new Date());
     gtag('config', 'G-M7VWHTCGTL');
   </script>
+  
 </head>
 
 <body>
   <div id="header-container"></div>
-  <div style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1120 height=630 tabindex="-1" style="width: 1120px; height: 630px; background: #231F20"></canvas>
+  <div style="text-align: center; padding: 0px; border: 0; margin: 0;">
+    <!-- 1120 630 -->
+    <canvas id="unity-canvas" width=16vw height=9vw max-width=10px style="width: 80%; height: auto; background: #231F20"></canvas>
     <script src="../Build/HitTheLastOneLast.loader.js"></script>
     <script>
       let gameStartTime;
@@ -62,9 +64,6 @@
         unityInstance.SendMessage('GameManager', 'OnGameEnd', endGame); // 게임 끝날 때 endGame 호출
       });
 
-      function sendMail() {
-        window.location.href = 'mailto:smilechild1005@naver.com';      
-      }
       function DisplayMessage(message) {
         alert(message);
       }
@@ -72,9 +71,10 @@
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         var meta = document.createElement('meta');
         meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        meta.content = 'width=device-width, height=device-height, initial-scale=2.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
 
+<<<<<<< HEAD
         var canvas = document.querySelector("#unity-canvas");
         canvas.style.transform = "scale(1)";
         canvas.style.transformOrigin = "center";
@@ -89,6 +89,8 @@
         header.style.width = "100%";
         header.style.zIndex = "1000";
 
+=======
+>>>>>>> 220dfa4a2714f2230a861deb535ed390bf9e0111
         document.body.style.textAlign = "left";
       }
     </script>
