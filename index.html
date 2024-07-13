@@ -75,9 +75,12 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
 
         var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "100%";
-        canvas.style.height = "160%";
-        canvas.style.position = "relative";
+        canvas.style.width = "140%";
+        canvas.style.height = "140%";
+        canvas.style.position = "fixed";
+        canvas.style.top = "50%";
+        canvas.style.left = "50%";
+        canvas.style.transform = "translate(-50%, -50%)";
 
         document.body.style.textAlign = "left";
       }
