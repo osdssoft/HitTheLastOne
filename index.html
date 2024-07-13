@@ -91,20 +91,6 @@
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
 
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.transform = "scale(1)";
-        canvas.style.transformOrigin = "center";
-        canvas.style.position = "fixed";
-        canvas.style.top = "30%";
-        canvas.style.width = "100%";
-        canvas.style.height = "auto";
-
-        var header = document.querySelector("#header");
-        header.style.position = "fixed";
-        header.style.top = "0";
-        header.style.width = "100%";
-        header.style.zIndex = "1000";
-
         document.body.style.textAlign = "left";
       }
     </script>
