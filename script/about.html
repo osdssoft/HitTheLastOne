@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Hit the Last One</title>
+</head>
+
+<body>
+  <div id="header-container"></div>
+  </div>
+  <script>
+    fetch('./script/header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header-container').innerHTML = html;
+    });
+  </script>
+  
+  <!-- 이 아래 들어가면 됨 -->
+
+</body>
+
+
+</html>
