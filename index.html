@@ -17,7 +17,14 @@
     gtag('js', new Date());
     gtag('config', 'G-M7VWHTCGTL');
   </script>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-orientation" content="portrait">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 
 <body>
@@ -81,7 +88,6 @@
         canvas.style.top = "50%";
         canvas.style.left = "50%";
         canvas.style.transform = "translate(-50%, -40%)";
-
         document.body.style.textAlign = "left";
       }
     </script>
@@ -93,5 +99,12 @@
       document.getElementById('header-container').innerHTML = html;
     });
   </script>
+  <script>
+    // 화면 회전을 막기 위한 자바스크립트
+    screen.orientation.lock('portrait').catch(function(error) {
+      console.error('Screen lock error:', error);
+    });
+  </script>
+  
 </body>
 </html>
