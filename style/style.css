@@ -89,8 +89,4 @@ a {
         margin: 0px;
         /* border: 3px solid greenyellow; */
     }
-    body, html {
-        transform: none !important; /* 모바일에서 기울이기 적용 안 되도록 */
-      }
-
 }
