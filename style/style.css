@@ -7,6 +7,10 @@ html {
 /* 폰트적용 끝 */
 
 body, ul, li {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
     margin: 0;
     padding: 0;
     list-style: none; /* 해당 태그의 list-style을 none으로 하는 것으로 ●을 제거한다 */
