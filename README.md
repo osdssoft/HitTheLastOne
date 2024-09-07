@@ -1,3 +1,3 @@
-[hitthelastone.com](hitthelastone.com).
+[hitthelastone.com](https://hitthelastone.com)
 
 made with Unity
